@@ -4,6 +4,7 @@
 #define EMITTER_PIN   8     // este pin controla el led on del los sensores (enciende y apaga)
 #define NEGRO         2500
 #define BLANCO        500
+#define CENTRO        3500  // indica que el sensor esta en el centro de la linea
 int recto;
 
 char S1 = A5;
