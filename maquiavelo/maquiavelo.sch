@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:pp-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -31,7 +30,17 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:pp-cache
+LIBS:mysensors_arduino
+LIBS:mysensors_connectors
+LIBS:mysensors_logic
+LIBS:mysensors_mcu
+LIBS:mysensors_memories
+LIBS:mysensors_network
+LIBS:mysensors_radios
+LIBS:mysensors_regulators
+LIBS:mysensors_security
+LIBS:mysensors_sensors
+LIBS:maquiavelo-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -752,4 +761,58 @@ Wire Wire Line
 	1800 1150 2050 1150
 Wire Wire Line
 	2050 1150 2050 1050
+$Comp
+L CONN_01X02 P1
+U 1 1 5B995CCB
+P 6400 950
+F 0 "P1" H 6400 1100 50  0000 C CNN
+F 1 "bateria1" V 6500 950 50  0000 C CNN
+F 2 "" H 6400 950 50  0000 C CNN
+F 3 "" H 6400 950 50  0000 C CNN
+	1    6400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P2
+U 1 1 5B995D5A
+P 6400 1600
+F 0 "P2" H 6400 1750 50  0000 C CNN
+F 1 "bateria2" V 6500 1600 50  0000 C CNN
+F 2 "" H 6400 1600 50  0000 C CNN
+F 3 "" H 6400 1600 50  0000 C CNN
+	1    6400 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1000 6050 1000
+Wire Wire Line
+	6050 1000 6050 1550
+Wire Wire Line
+	6050 1550 6200 1550
+Wire Wire Line
+	5600 1650 6200 1650
+Wire Wire Line
+	6200 900  5600 900 
+$Comp
+L GND #PWR028
+U 1 1 5B9963C7
+P 5600 1650
+F 0 "#PWR028" H 5600 1400 50  0001 C CNN
+F 1 "GND" H 5600 1500 50  0000 C CNN
+F 2 "" H 5600 1650 50  0000 C CNN
+F 3 "" H 5600 1650 50  0000 C CNN
+	1    5600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +7.5V #PWR029
+U 1 1 5B996A6A
+P 5600 900
+F 0 "#PWR029" H 5600 750 50  0001 C CNN
+F 1 "+7.5V" H 5600 1040 50  0000 C CNN
+F 2 "" H 5600 900 50  0001 C CNN
+F 3 "" H 5600 900 50  0001 C CNN
+	1    5600 900 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
